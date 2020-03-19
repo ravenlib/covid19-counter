@@ -16,7 +16,7 @@ export default class App extends React.Component {
   async componentDidMount() {
     try {
       const totalStat = await (await axios.get('https://covid19-counter-api.herokuapp.com/v1/statistics/summary')).data;
-      const countriesStat = await (await axios.get('https://corona.lmao.ninja/countries')).data;
+      const countriesStat = await (await axios.get('https://covid19-counter-api.herokuapp.com/v1/statistics/countries')).data.countries;
       this.setState({
         isLoading: false,
         totalStat,
@@ -30,10 +30,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.totalStat);
-    if (this.state.totalStat !== undefined) {
-      console.log(new Date(this.state.totalStat.updated));
-    }
     return (
       <div>
         {this.state.isFailed && <Alert variant="danger">Error has occurred, please refresh the page or contact the administrator</Alert>}
