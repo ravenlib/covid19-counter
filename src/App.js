@@ -5,22 +5,26 @@ import axios from 'axios';
 import Spinner from 'react-bootstrap/Spinner'
 import Alert from 'react-bootstrap/Alert'
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
+import NewsBox from './NewsBox';
 
 export default class App extends React.Component {
 
   state = {
     isFailed: false,
     isLoading: true,
-    countriesStat: []
+    countriesStat: [],
+    apNews: []
   }
   async componentDidMount() {
     try {
       const totalStat = await (await axios.get('https://covid19-counter-api.herokuapp.com/v1/statistics/summary')).data;
       const countriesStat = await (await axios.get('https://covid19-counter-api.herokuapp.com/v1/statistics/countries')).data.countries;
+      const apNews = await (await axios.get('https://covid19-counter-api.herokuapp.com/v1/news')).data.news;
       this.setState({
         isLoading: false,
         totalStat,
-        countriesStat
+        countriesStat,
+        apNews
       })
     } catch(err) {
       this.setState({
@@ -51,6 +55,10 @@ export default class App extends React.Component {
                 <TableHeaderColumn dataField='deaths' headerAlign='center' dataAlign='right' dataSort={ true }>Total Deaths</TableHeaderColumn>
                 <TableHeaderColumn dataField='recovered' headerAlign='center' dataAlign='right' dataSort={ true }>Total Recovered</TableHeaderColumn>
               </BootstrapTable>
+          }
+          <hr />
+          {!this.state.isLoading && 
+            this.state.apNews.map(newsItem => <NewsBox key={newsItem.title} isLoading={this.state.isLoading} newsItem={newsItem}></NewsBox>)
           }
         </MainWrapper>
       </div>
