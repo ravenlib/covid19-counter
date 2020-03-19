@@ -9,7 +9,7 @@ export default function TotalStatBody(props) {
                 <div>Updated Date: {updatedDate.toDateString() + " " + updatedDate.toLocaleTimeString()}</div>
                 <div>Total Cases: {props.totalStat.cases}</div>
                 <div>Total Deaths: {props.totalStat.deaths}</div>
-                <div>Recovered Cases: {props.totalStat.deaths}</div>
+                <div>Recovered Cases: {props.totalStat.recovered}</div>
             </div>
         );
     }
