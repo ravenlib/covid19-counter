@@ -12,7 +12,7 @@ export default function NewsBox(props) {
     return (
         <BoxWrapper>
             <div>
-                <a href={props.newsItem.link} target="_blank">
+                <a href={props.newsItem.link} target="_blank" rel="noopener noreferrer">
                     <NewsTitle>{props.newsItem.title}</NewsTitle>
                     {props.newsItem.description}
                 <hr />
