@@ -42,4 +42,4 @@ const NewsTitle = styled.section`
 NewsBox.propTypes = {
     isLoading: PropTypes.bool.isRequired,
     newsItem: PropTypes.object
-}
+};
