@@ -20,7 +20,7 @@ export default function CountryCard(props) {
         deaths,
         todayDeaths,
         recovered,
-        // activeCases,
+        activeCases,
         critical,
     } = props.countryStat;
     return (
@@ -34,6 +34,9 @@ export default function CountryCard(props) {
                 </Typography>
                 <Typography color="textSecondary">
                     New Deaths: {todayDeaths}
+                </Typography>
+                <Typography color="textSecondary">
+                    Active Cases: {activeCases}
                 </Typography>
                 <Typography color="textSecondary">
                     Critical: {critical}

@@ -8,6 +8,7 @@ export default function TableBody(props) {
             <TableHeaderColumn dataField='country' isKey headerAlign='center' dataAlign='center' dataSort={ true }>Country</TableHeaderColumn>
             <TableHeaderColumn dataField='todayCases' headerAlign='center' dataAlign='right' dataSort={ true }>New Cases</TableHeaderColumn>
             <TableHeaderColumn dataField='todayDeaths' headerAlign='center' dataAlign='right' dataSort={ true }>New Deaths</TableHeaderColumn>
+            <TableHeaderColumn dataField='activeCases' headerAlign='center' dataAlign='right' dataSort={ true }>Active Cases</TableHeaderColumn>
             <TableHeaderColumn dataField='critical' headerAlign='center' dataAlign='right' dataSort={ true }>Critical</TableHeaderColumn>
             <TableHeaderColumn dataField='cases' headerAlign='center' dataAlign='right' dataSort={ true }>Total Cases</TableHeaderColumn>
             <TableHeaderColumn dataField='deaths' headerAlign='center' dataAlign='right' dataSort={ true }>Total Deaths</TableHeaderColumn>
