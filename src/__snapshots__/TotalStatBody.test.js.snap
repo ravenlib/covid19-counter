@@ -1,0 +1,763 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders TableBody with empty totalStat 1`] = `
+<BootstrapTable
+  autoCollapse={
+    Object {
+      "filter": false,
+      "search": false,
+      "sort": false,
+    }
+  }
+  bodyContainerClass={null}
+  bordered={true}
+  cellEdit={
+    Object {
+      "afterSaveCell": undefined,
+      "beforeSaveCell": undefined,
+      "blurToEscape": false,
+      "blurToSave": false,
+      "mode": "none",
+      "nonEditableRows": undefined,
+    }
+  }
+  columnFilter={false}
+  condensed={false}
+  containerClass={null}
+  csvFileName="spreadsheet.csv"
+  deleteRow={false}
+  expandColumnOptions={
+    Object {
+      "expandColumnBeforeSelectColumn": true,
+      "expandColumnComponent": undefined,
+      "expandColumnVisible": false,
+      "expandedColumnHeaderComponent": undefined,
+    }
+  }
+  exportCSV={false}
+  fetchInfo={
+    Object {
+      "dataTotalSize": 0,
+    }
+  }
+  footer={false}
+  headerContainerClass={null}
+  height="100%"
+  hover={true}
+  ignoreSinglePage={false}
+  insertRow={false}
+  keyBoardNav={false}
+  multiColumnSearch={false}
+  multiColumnSort={1}
+  options={
+    Object {
+      "afterColumnFilter": undefined,
+      "afterDeleteRow": undefined,
+      "afterInsertRow": undefined,
+      "afterSearch": undefined,
+      "afterTableComplete": undefined,
+      "alwaysShowAllBtns": false,
+      "beforeShowError": undefined,
+      "btnGroup": undefined,
+      "clearSearch": false,
+      "clearSearchBtn": undefined,
+      "closeText": "Close",
+      "defaultSearch": "",
+      "defaultSortName": undefined,
+      "defaultSortOrder": undefined,
+      "deleteBtn": undefined,
+      "deleteText": "Delete",
+      "excludeCSVHeader": false,
+      "expandAll": false,
+      "expandBodyClass": null,
+      "expandBy": "row",
+      "expandParentClass": null,
+      "expandRowBgColor": undefined,
+      "expanding": Array [],
+      "exportCSVBtn": undefined,
+      "exportCSVSeparator": ",",
+      "exportCSVText": "Export to CSV",
+      "firstPage": "<<",
+      "firstPageTitle": "first page",
+      "handleConfirmDeleteRow": undefined,
+      "hidePageListOnlyOnePage": false,
+      "hideRowOnExpand": false,
+      "hideSizePerPage": false,
+      "ignoreEditable": false,
+      "insertBtn": undefined,
+      "insertFailIndicator": "Validation errors, please check!",
+      "insertModal": undefined,
+      "insertModalBody": undefined,
+      "insertModalFooter": undefined,
+      "insertModalHeader": undefined,
+      "insertText": "New",
+      "keepSizePerPageState": false,
+      "lastPage": ">>",
+      "lastPageTitle": "last page",
+      "nextPage": ">",
+      "nextPageTitle": "next page",
+      "noAutoBOM": true,
+      "noDataText": undefined,
+      "onExpand": undefined,
+      "onMouseEnter": undefined,
+      "onMouseLeave": undefined,
+      "onRowClick": undefined,
+      "onRowDoubleClick": undefined,
+      "onRowMouseOut": undefined,
+      "onRowMouseOver": undefined,
+      "onSizePerPageList": undefined,
+      "onlyOneExpanding": false,
+      "page": undefined,
+      "pageStartIndex": 1,
+      "paginationPanel": undefined,
+      "paginationPosition": "bottom",
+      "paginationShowsTotal": false,
+      "paginationSize": 5,
+      "prePage": "<",
+      "prePageTitle": "previous page",
+      "printToolBar": true,
+      "saveText": "Save",
+      "searchDelayTime": undefined,
+      "searchField": undefined,
+      "searchPanel": undefined,
+      "searchPosition": "right",
+      "showSelectedOnlyBtn": undefined,
+      "sizePerPage": undefined,
+      "sizePerPageDropDown": undefined,
+      "sizePerPageList": Array [
+        10,
+        25,
+        30,
+        50,
+      ],
+      "sortIndicator": true,
+      "sortName": undefined,
+      "sortOrder": undefined,
+      "toolBar": undefined,
+      "toolbarPosition": "top",
+      "withFirstAndLast": true,
+      "withoutNoDataText": false,
+    }
+  }
+  pagination={false}
+  printable={false}
+  renderAlert={true}
+  replace={false}
+  search={true}
+  selectRow={
+    Object {
+      "bgColor": "",
+      "clickToExpand": false,
+      "clickToSelect": false,
+      "clickToSelectAndEditCell": false,
+      "customComponent": undefined,
+      "hideSelectColumn": false,
+      "mode": "none",
+      "onSelect": undefined,
+      "onSelectAll": undefined,
+      "onlyUnselectVisible": false,
+      "selected": Array [],
+      "showOnlySelected": false,
+      "unselectable": Array [],
+    }
+  }
+  striped={true}
+  tableBodyClass={null}
+  tableContainerClass={null}
+  tableFooterClass={null}
+  tableHeaderClass={null}
+  trClassName=""
+  version="3"
+  withoutTabIndex={false}
+>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="center"
+    dataField="country"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={true}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Country
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="todayCases"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    New Cases
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="todayDeaths"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    New Deaths
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="activeCases"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Active Cases
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="critical"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Critical
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="cases"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Total Cases
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="deaths"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Total Deaths
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="recovered"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Total Recovered
+  </TableHeaderColumn>
+</BootstrapTable>
+`;
+
+exports[`renders TableBody with totalStat 1`] = `
+<BootstrapTable
+  autoCollapse={
+    Object {
+      "filter": false,
+      "search": false,
+      "sort": false,
+    }
+  }
+  bodyContainerClass={null}
+  bordered={true}
+  cellEdit={
+    Object {
+      "afterSaveCell": undefined,
+      "beforeSaveCell": undefined,
+      "blurToEscape": false,
+      "blurToSave": false,
+      "mode": "none",
+      "nonEditableRows": undefined,
+    }
+  }
+  columnFilter={false}
+  condensed={false}
+  containerClass={null}
+  csvFileName="spreadsheet.csv"
+  deleteRow={false}
+  expandColumnOptions={
+    Object {
+      "expandColumnBeforeSelectColumn": true,
+      "expandColumnComponent": undefined,
+      "expandColumnVisible": false,
+      "expandedColumnHeaderComponent": undefined,
+    }
+  }
+  exportCSV={false}
+  fetchInfo={
+    Object {
+      "dataTotalSize": 0,
+    }
+  }
+  footer={false}
+  headerContainerClass={null}
+  height="100%"
+  hover={true}
+  ignoreSinglePage={false}
+  insertRow={false}
+  keyBoardNav={false}
+  multiColumnSearch={false}
+  multiColumnSort={1}
+  options={
+    Object {
+      "afterColumnFilter": undefined,
+      "afterDeleteRow": undefined,
+      "afterInsertRow": undefined,
+      "afterSearch": undefined,
+      "afterTableComplete": undefined,
+      "alwaysShowAllBtns": false,
+      "beforeShowError": undefined,
+      "btnGroup": undefined,
+      "clearSearch": false,
+      "clearSearchBtn": undefined,
+      "closeText": "Close",
+      "defaultSearch": "",
+      "defaultSortName": undefined,
+      "defaultSortOrder": undefined,
+      "deleteBtn": undefined,
+      "deleteText": "Delete",
+      "excludeCSVHeader": false,
+      "expandAll": false,
+      "expandBodyClass": null,
+      "expandBy": "row",
+      "expandParentClass": null,
+      "expandRowBgColor": undefined,
+      "expanding": Array [],
+      "exportCSVBtn": undefined,
+      "exportCSVSeparator": ",",
+      "exportCSVText": "Export to CSV",
+      "firstPage": "<<",
+      "firstPageTitle": "first page",
+      "handleConfirmDeleteRow": undefined,
+      "hidePageListOnlyOnePage": false,
+      "hideRowOnExpand": false,
+      "hideSizePerPage": false,
+      "ignoreEditable": false,
+      "insertBtn": undefined,
+      "insertFailIndicator": "Validation errors, please check!",
+      "insertModal": undefined,
+      "insertModalBody": undefined,
+      "insertModalFooter": undefined,
+      "insertModalHeader": undefined,
+      "insertText": "New",
+      "keepSizePerPageState": false,
+      "lastPage": ">>",
+      "lastPageTitle": "last page",
+      "nextPage": ">",
+      "nextPageTitle": "next page",
+      "noAutoBOM": true,
+      "noDataText": undefined,
+      "onExpand": undefined,
+      "onMouseEnter": undefined,
+      "onMouseLeave": undefined,
+      "onRowClick": undefined,
+      "onRowDoubleClick": undefined,
+      "onRowMouseOut": undefined,
+      "onRowMouseOver": undefined,
+      "onSizePerPageList": undefined,
+      "onlyOneExpanding": false,
+      "page": undefined,
+      "pageStartIndex": 1,
+      "paginationPanel": undefined,
+      "paginationPosition": "bottom",
+      "paginationShowsTotal": false,
+      "paginationSize": 5,
+      "prePage": "<",
+      "prePageTitle": "previous page",
+      "printToolBar": true,
+      "saveText": "Save",
+      "searchDelayTime": undefined,
+      "searchField": undefined,
+      "searchPanel": undefined,
+      "searchPosition": "right",
+      "showSelectedOnlyBtn": undefined,
+      "sizePerPage": undefined,
+      "sizePerPageDropDown": undefined,
+      "sizePerPageList": Array [
+        10,
+        25,
+        30,
+        50,
+      ],
+      "sortIndicator": true,
+      "sortName": undefined,
+      "sortOrder": undefined,
+      "toolBar": undefined,
+      "toolbarPosition": "top",
+      "withFirstAndLast": true,
+      "withoutNoDataText": false,
+    }
+  }
+  pagination={false}
+  printable={false}
+  renderAlert={true}
+  replace={false}
+  search={true}
+  selectRow={
+    Object {
+      "bgColor": "",
+      "clickToExpand": false,
+      "clickToSelect": false,
+      "clickToSelectAndEditCell": false,
+      "customComponent": undefined,
+      "hideSelectColumn": false,
+      "mode": "none",
+      "onSelect": undefined,
+      "onSelectAll": undefined,
+      "onlyUnselectVisible": false,
+      "selected": Array [],
+      "showOnlySelected": false,
+      "unselectable": Array [],
+    }
+  }
+  striped={true}
+  tableBodyClass={null}
+  tableContainerClass={null}
+  tableFooterClass={null}
+  tableHeaderClass={null}
+  trClassName=""
+  version="3"
+  withoutTabIndex={false}
+>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="center"
+    dataField="country"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={true}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Country
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="todayCases"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    New Cases
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="todayDeaths"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    New Deaths
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="activeCases"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Active Cases
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="critical"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Critical
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="cases"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Total Cases
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="deaths"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Total Deaths
+  </TableHeaderColumn>
+  <TableHeaderColumn
+    className=""
+    columnClassName=""
+    columnTitle={false}
+    csvFieldType="string"
+    dataAlign="right"
+    dataField="recovered"
+    dataSort={true}
+    defaultASC={false}
+    editColumnClassName=""
+    editable={true}
+    expandable={true}
+    filterFormatted={false}
+    headerAlign="center"
+    headerTitle={true}
+    hidden={false}
+    hiddenOnInsert={false}
+    invalidEditColumnClassName=""
+    isKey={false}
+    keyValidator={false}
+    searchable={true}
+    sortIndicator={true}
+    width={null}
+  >
+    Total Recovered
+  </TableHeaderColumn>
+</BootstrapTable>
+`;

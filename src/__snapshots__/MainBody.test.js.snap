@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots for CardBody not isLoading renders CardBody  when not isLoading mobile2 1`] = `
+<div>
+  <hr />
+  <TotalStatBody
+    isLoading={false}
+    totalStat={
+      Object {
+        "cases": 254701,
+        "deaths": 10447,
+        "recovered": 89071,
+        "updated": 1584710988792,
+      }
+    }
+  />
+  <hr />
+  <CardBody
+    countriesStat={
+      Array [
+        Object {
+          "activeCases": 6569,
+          "cases": 80967,
+          "country": "China",
+          "critical": 2136,
+          "deaths": 3248,
+          "recovered": 71150,
+          "todayCases": 39,
+          "todayDeaths": 3,
+        },
+        Object {
+          "activeCases": 4324,
+          "cases": 12313,
+          "country": "Italy",
+          "critical": 2345,
+          "deaths": 123,
+          "recovered": 32523,
+          "todayCases": 234,
+          "todayDeaths": 23,
+        },
+      ]
+    }
+  />
+  <hr />
+  <NewsBox
+    isLoading={false}
+    key="Title1"
+    newsItem={
+      Object {
+        "description": "description1",
+        "link": "https://link1.com",
+        "title": "Title1",
+      }
+    }
+  />
+  <NewsBox
+    isLoading={false}
+    key="Title2"
+    newsItem={
+      Object {
+        "description": "description2",
+        "link": "https://link2.com",
+        "title": "Title2",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Snapshots for CardBody not isLoading renders CardBody no news when not isLoading desktop 1`] = `
+<div>
+  <hr />
+  <TotalStatBody
+    isLoading={false}
+    totalStat={
+      Object {
+        "cases": 254701,
+        "deaths": 10447,
+        "recovered": 89071,
+        "updated": 1584710988792,
+      }
+    }
+  />
+  <hr />
+  <TableBody
+    countriesStat={
+      Array [
+        Object {
+          "activeCases": 6569,
+          "cases": 80967,
+          "country": "China",
+          "critical": 2136,
+          "deaths": 3248,
+          "recovered": 71150,
+          "todayCases": 39,
+          "todayDeaths": 3,
+        },
+        Object {
+          "activeCases": 4324,
+          "cases": 12313,
+          "country": "Italy",
+          "critical": 2345,
+          "deaths": 123,
+          "recovered": 32523,
+          "todayCases": 234,
+          "todayDeaths": 23,
+        },
+      ]
+    }
+  />
+  <hr />
+</div>
+`;
+
+exports[`Snapshots for CardBody not isLoading renders CardBody when not isLoading desktop 1`] = `
+<div>
+  <hr />
+  <TotalStatBody
+    isLoading={false}
+    totalStat={
+      Object {
+        "cases": 254701,
+        "deaths": 10447,
+        "recovered": 89071,
+        "updated": 1584710988792,
+      }
+    }
+  />
+  <hr />
+  <TableBody
+    countriesStat={
+      Array [
+        Object {
+          "activeCases": 6569,
+          "cases": 80967,
+          "country": "China",
+          "critical": 2136,
+          "deaths": 3248,
+          "recovered": 71150,
+          "todayCases": 39,
+          "todayDeaths": 3,
+        },
+        Object {
+          "activeCases": 4324,
+          "cases": 12313,
+          "country": "Italy",
+          "critical": 2345,
+          "deaths": 123,
+          "recovered": 32523,
+          "todayCases": 234,
+          "todayDeaths": 23,
+        },
+      ]
+    }
+  />
+  <hr />
+  <NewsBox
+    isLoading={false}
+    key="Title1"
+    newsItem={
+      Object {
+        "description": "description1",
+        "link": "https://link1.com",
+        "title": "Title1",
+      }
+    }
+  />
+  <NewsBox
+    isLoading={false}
+    key="Title2"
+    newsItem={
+      Object {
+        "description": "description2",
+        "link": "https://link2.com",
+        "title": "Title2",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Snapshots for CardBody not isLoading renders CardBody when not isLoading mobile1 1`] = `
+<div>
+  <hr />
+  <TotalStatBody
+    isLoading={false}
+    totalStat={
+      Object {
+        "cases": 254701,
+        "deaths": 10447,
+        "recovered": 89071,
+        "updated": 1584710988792,
+      }
+    }
+  />
+  <hr />
+  <CardBody
+    countriesStat={
+      Array [
+        Object {
+          "activeCases": 6569,
+          "cases": 80967,
+          "country": "China",
+          "critical": 2136,
+          "deaths": 3248,
+          "recovered": 71150,
+          "todayCases": 39,
+          "todayDeaths": 3,
+        },
+        Object {
+          "activeCases": 4324,
+          "cases": 12313,
+          "country": "Italy",
+          "critical": 2345,
+          "deaths": 123,
+          "recovered": 32523,
+          "todayCases": 234,
+          "todayDeaths": 23,
+        },
+      ]
+    }
+  />
+  <hr />
+  <NewsBox
+    isLoading={false}
+    key="Title1"
+    newsItem={
+      Object {
+        "description": "description1",
+        "link": "https://link1.com",
+        "title": "Title1",
+      }
+    }
+  />
+  <NewsBox
+    isLoading={false}
+    key="Title2"
+    newsItem={
+      Object {
+        "description": "description2",
+        "link": "https://link2.com",
+        "title": "Title2",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Snapshots for CardBody with CircularProgress not isLoading renders CardBody with only CircularProgress when not isLoading desktop 1`] = `
+<div>
+  <hr />
+  <TotalStatBody
+    isLoading={false}
+    totalStat={
+      Object {
+        "cases": 254701,
+        "deaths": 10447,
+        "recovered": 89071,
+        "updated": 1584710988792,
+      }
+    }
+  />
+  <hr />
+  <TableBody
+    countriesStat={
+      Array [
+        Object {
+          "activeCases": 6569,
+          "cases": 80967,
+          "country": "China",
+          "critical": 2136,
+          "deaths": 3248,
+          "recovered": 71150,
+          "todayCases": 39,
+          "todayDeaths": 3,
+        },
+        Object {
+          "activeCases": 4324,
+          "cases": 12313,
+          "country": "Italy",
+          "critical": 2345,
+          "deaths": 123,
+          "recovered": 32523,
+          "todayCases": 234,
+          "todayDeaths": 23,
+        },
+      ]
+    }
+  />
+  <hr />
+  <NewsBox
+    isLoading={false}
+    key="Title1"
+    newsItem={
+      Object {
+        "description": "description1",
+        "link": "https://link1.com",
+        "title": "Title1",
+      }
+    }
+  />
+  <NewsBox
+    isLoading={false}
+    key="Title2"
+    newsItem={
+      Object {
+        "description": "description2",
+        "link": "https://link2.com",
+        "title": "Title2",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Snapshots for CardBody with CircularProgress when isLoading renders CardBody with only CircularProgress when isLoading desktop 1`] = `
+<div>
+  <hr />
+  <TotalStatBody
+    isLoading={true}
+    totalStat={
+      Object {
+        "cases": 254701,
+        "deaths": 10447,
+        "recovered": 89071,
+        "updated": 1584710988792,
+      }
+    }
+  />
+  <hr />
+  <WithStyles(ForwardRef(CircularProgress)) />
+  <hr />
+</div>
+`;

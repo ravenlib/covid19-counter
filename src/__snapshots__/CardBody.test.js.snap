@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CardBody with 1 countriesStat 1`] = `
+<div>
+  <WithStyles(ForwardRef(TextField))
+    id="standard-basic"
+    label="Filter"
+    onChange={[Function]}
+  />
+  <CountryCard
+    countryStat={
+      Object {
+        "activeCases": 6569,
+        "cases": 80967,
+        "country": "China",
+        "critical": 2136,
+        "deaths": 3248,
+        "recovered": 71150,
+        "todayCases": 39,
+        "todayDeaths": 3,
+      }
+    }
+    key="China"
+  />
+</div>
+`;
+
+exports[`renders CardBody with 2 countriesStat 1`] = `
+<div>
+  <WithStyles(ForwardRef(TextField))
+    id="standard-basic"
+    label="Filter"
+    onChange={[Function]}
+  />
+  <CountryCard
+    countryStat={
+      Object {
+        "activeCases": 6569,
+        "cases": 80967,
+        "country": "China",
+        "critical": 2136,
+        "deaths": 3248,
+        "recovered": 71150,
+        "todayCases": 39,
+        "todayDeaths": 3,
+      }
+    }
+    key="China"
+  />
+  <CountryCard
+    countryStat={
+      Object {
+        "activeCases": 4324,
+        "cases": 12313,
+        "country": "Italy",
+        "critical": 2345,
+        "deaths": 123,
+        "recovered": 32523,
+        "todayCases": 234,
+        "todayDeaths": 23,
+      }
+    }
+    key="Italy"
+  />
+</div>
+`;
+
+exports[`renders CardBody with empty countriesStat 1`] = `
+<div>
+  <WithStyles(ForwardRef(TextField))
+    id="standard-basic"
+    label="Filter"
+    onChange={[Function]}
+  />
+</div>
+`;

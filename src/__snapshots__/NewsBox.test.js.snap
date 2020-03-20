@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders NewsBox correctly with newsItem 1`] = `<div />`;
+
+exports[`renders NewsBox correctly with newsItem isLoading 1`] = `<div />`;
+
+exports[`renders NewsBox correctly with newsItem isNotLoading 1`] = `
+<styled.section>
+  <div>
+    <a
+      href="https://link1.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <styled.section>
+        Title1
+      </styled.section>
+      description1
+      <hr />
+    </a>
+  </div>
+</styled.section>
+`;
