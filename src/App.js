@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import TotalStatBody from './TotalStatBody';
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert'
-import NewsBox from './NewsBox';
-import TableBody from "./TableBody";
-import CardBody from './CardBody';
 import CircularProgress from "@material-ui/core/CircularProgress";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import MainBody from "./MainBody";
 
 export default class App extends React.Component {
 
@@ -14,6 +14,7 @@ export default class App extends React.Component {
         isFailed: false,
         isLoading: true,
         countriesStat: [],
+        totalStat: {},
         apNews: [],
         displayTable: true,
         windowWidth: window.innerWidth
@@ -46,33 +47,24 @@ export default class App extends React.Component {
         this.setState({windowWidth: window.innerWidth});
     };
 
-    isMobile = () => {
-        console.log(this.state.windowWidth <= 750);
-        return this.state.windowWidth <= 750;
-    };
-
     render() {
         return (
             <div>
+                <AppBar position="static">
+                    <Toolbar variant="dense">
+                        <Typography variant="h6" color="inherit">
+                            COVID-19 Counter
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
                 {this.state.isFailed &&
                 <Alert variant="danger">Error has occurred, please refresh the page or contact the
                     administrator</Alert>}
                 <MainWrapper>
-                    <hr/>
-                    <TitleWrapper>
-                        <h1>COVID-19 Counter</h1>
-                    </TitleWrapper>
-                    <hr/>
-                    <TotalStatBody isLoading={this.state.isLoading} totalStat={this.state.totalStat}/>
-                    <hr/>
-                    {this.state.isLoading ? <CircularProgress/>
-                        : (this.isMobile() ? <CardBody countriesStat={this.state.countriesStat}/> :
-                            <TableBody countriesStat={this.state.countriesStat}/>)
-                    }
-                    <hr/>
-                    {!this.state.isLoading &&
-                    this.state.apNews.map(newsItem => <NewsBox key={newsItem.title} isLoading={this.state.isLoading}
-                                                               newsItem={newsItem}></NewsBox>)
+                    {this.state.isLoading ? <ProgressWrapper><CircularProgress/></ProgressWrapper> :
+                        <MainBody countriesStat={this.state.countriesStat} apNews={this.state.apNews}
+                                  isLoading={this.state.isLoading} totalStat={this.state.totalStat}
+                                  windowWidth={this.state.windowWidth}/>
                     }
                 </MainWrapper>
             </div>
@@ -81,14 +73,11 @@ export default class App extends React.Component {
 }
 
 const MainWrapper = styled.section`
-  width: 90%;
-  text-align: center;
-  margin: auto;
+    width: 90%;
+    text-align: center;
+    margin: auto;
 `;
 
-const TitleWrapper = styled.section`
-  margin: 1.5em;
-  h1 {
-    font-size: 1.5em;
-  }
+const ProgressWrapper = styled.section`
+    margin: 1.5em
 `;

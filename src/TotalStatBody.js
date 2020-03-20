@@ -1,24 +1,71 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Typography from '@material-ui/core/Typography';
 
 export default function TotalStatBody(props) {
     if (props.totalStat !== undefined || !props.isLoading) {
         const updatedDate = new Date(props.totalStat.updated);
         return (
             <div>
-                <div>Updated Date: {updatedDate.toDateString() + " " + updatedDate.toLocaleTimeString()}</div>
-                <div>Total Cases: {props.totalStat.cases}</div>
-                <div>Total Deaths: {props.totalStat.deaths}</div>
-                <div>Recovered Cases: {props.totalStat.recovered}</div>
+                <Typography variant='h6' color='textSecondary'>
+                    Updated Date
+                </Typography>
+                <Typography variant='h4' color='textPrimary'>
+                    {updatedDate.toDateString() + " " + updatedDate.toLocaleTimeString()}
+                </Typography>
+
+                <Typography variant='h6' color='textSecondary'>
+                    Total Cases
+                </Typography>
+                <Typography variant='h4' color='textPrimary'>
+                    {props.totalStat.cases}
+                </Typography>
+
+                <Typography variant='h6' color='textSecondary'>
+                    Total Deaths
+                </Typography>
+                <Typography variant='h4' color='textPrimary'>
+                    {props.totalStat.deaths}
+                </Typography>
+
+                <Typography variant='h6' color='textSecondary'>
+                    Recovered Cases
+                </Typography>
+                <Typography variant='h4' color='textPrimary'>
+                    {props.totalStat.recovered}
+                </Typography>
             </div>
         );
     }
     return (
         <div>
-            <div>Updated Date: Loading...</div>
-            <div>Total Cases: Loading...</div>
-            <div>Total Deaths: Loading...</div>
-            <div>Recovered Cases: Loading...</div>
+            <Typography variant='h6' color='textSecondary'>
+                Updated Date
+            </Typography>
+            <Typography variant='subtitle1' color='textPrimary'>
+                Loading...
+            </Typography>
+
+            <Typography variant='h6' color='textSecondary'>
+                Total Cases
+            </Typography>
+            <Typography variant='subtitle1' color='textPrimary'>
+                Loading...
+            </Typography>
+
+            <Typography variant='h6' color='textSecondary'>
+                Total Deaths
+            </Typography>
+            <Typography variant='subtitle1' color='textPrimary'>
+                Loading...
+            </Typography>
+
+            <Typography variant='h6' color='textSecondary'>
+                Recovered Cases
+            </Typography>
+            <Typography variant='subtitle1' color='textPrimary'>
+                Loading...
+            </Typography>
         </div>
     )
 }
