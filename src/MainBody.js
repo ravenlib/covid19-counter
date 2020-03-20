@@ -24,7 +24,7 @@ export default function MainBody(props) {
                     <TableBody countriesStat={countriesStat}/>)
             }
             <hr/>
-            {isLoading &&
+            {!isLoading &&
             apNews.map(newsItem => <NewsBox key={newsItem.title} isLoading={isLoading}
                                                        newsItem={newsItem}></NewsBox>)
             }
@@ -39,7 +39,7 @@ const isMobile = (windowWidth) => {
 
 MainBody.propTypes = {
     isLoading: PropTypes.bool.isRequired,
-    totalStat: PropTypes.array.isRequired,
+    totalStat: PropTypes.object.isRequired,
     countriesStat: PropTypes.array.isRequired,
     apNews: PropTypes.array.isRequired,
     windowWidth: PropTypes.number.isRequired
