@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AppNavBar 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(AppBar))
+    color="secondary"
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))
+      variant="dense"
+    >
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-title-2"
+        color="inherit"
+        variant="h6"
+      >
+        COVID-19 Counter
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(IconButton))
+        href="https://github.com/pandabyte/covid19-counter"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <GitHubIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+</div>
+`;

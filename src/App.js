@@ -3,10 +3,8 @@ import styled from 'styled-components';
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert'
 import CircularProgress from "@material-ui/core/CircularProgress";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import MainBody from "./MainBody";
+import AppNavBar from './AppNavBar'
+import MainBody from './MainBody';
 
 export default class App extends React.Component {
 
@@ -50,13 +48,7 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <AppBar position="static">
-                    <Toolbar variant="dense">
-                        <Typography variant="h6" color="inherit">
-                            COVID-19 Counter
-                        </Typography>
-                    </Toolbar>
-                </AppBar>
+                <AppNavBar />
                 {this.state.isFailed &&
                 <Alert variant="danger">Error has occurred, please refresh the page or contact the
                     administrator</Alert>}
@@ -79,5 +71,5 @@ const MainWrapper = styled.section`
 `;
 
 const ProgressWrapper = styled.section`
-    margin: 1.5em
+    margin: 1.5em;
 `;

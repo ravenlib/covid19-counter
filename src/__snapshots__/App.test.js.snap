@@ -2,20 +2,7 @@
 
 exports[`renders App depending on axios result renders learn react link 1`] = `
 <div>
-  <WithStyles(ForwardRef(AppBar))
-    position="static"
-  >
-    <WithStyles(ForwardRef(Toolbar))
-      variant="dense"
-    >
-      <WithStyles(ForwardRef(Typography))
-        color="inherit"
-        variant="h6"
-      >
-        COVID-19 Counter
-      </WithStyles(ForwardRef(Typography))>
-    </WithStyles(ForwardRef(Toolbar))>
-  </WithStyles(ForwardRef(AppBar))>
+  <AppNavBar />
   <styled.section>
     <styled.section>
       <WithStyles(ForwardRef(CircularProgress)) />
